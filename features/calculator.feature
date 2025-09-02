@@ -23,3 +23,15 @@ Feature: Calculator Basic Operations
       | firstValue | secondValue | expectedValue |
       | 22         | 6           | 16            |
       | 3000       | 300         | 2700          |
+
+
+  Scenario: Multiply two numbers
+    Given I have entered <firstValue> and <secondValue> into the calculator
+    When I press the multiply button
+    Then the result should be <expectedValue>
+
+
+    Examples:
+      | firstValue | secondValue | expectedValue |
+      | 4          | 5           | 20            |
+      | 8          | 5           | 40            |

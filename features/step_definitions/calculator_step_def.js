@@ -22,6 +22,10 @@ When('I press the subtract button', function(){
   result = calculator.subtraction(i, j)
 })
 
+When('I press the multiply button',function(){
+  result = calculator.multiply(i,j)
+})
+
 Then('the result should be {int}', function (expectedValue) {
   assert.equal(result, expectedValue)
 })

@@ -6,5 +6,9 @@ export class Calculator {
   subtraction(i, j){
     return i-j
   }
+
+  multiply(i,j){
+    return i*j
+  }
 }
 
